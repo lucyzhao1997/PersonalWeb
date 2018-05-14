@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.education-card{
+	margin-top:50px;
+	margin-bottom: 20px;
+	background: grey;
+	color: white;
+	text-align:center;
+	box-shadow: 4px 4px 8px 0 hsla(271, 100%, 94%, 1);
+    transition: 0.3s;
+	
+    
+	
+}
+@media screen and (max-width: 1199px){
+	.col-sm-4.education-card-text-uni{
+		margin-left:-15px !important;
+		margin:auto ;
+		font-family:Bitter;
+		align:center !important;
+	
+	}
+	.col-sm-4.education-card-text-high{
+		align:center !important;
+		position: center;
+		margin:auto ;
+		margin-left:-12px;
+	}
+	.col-sm-4.education-card-text-middle{
+		margin-left: -16px !important;
+		align:center !important;
+		position: center;
+		margin:auto;
+		
+	}
+}
+.card-img-bottom {
+  color: #fff;
+  height: 20rem;
+  background: url(img/background-pg1.jpg) center no-repeat;
+  background-size: cover;
+}
+.inner-frame{
+	
+	
+	left:0;
+	
+	
+}
+.education-card-img-top{
+
+	position:sticky;
+	float:left;
+
+
+}
+
+.education-card:hover{
+	box-shadow: 4px 12px 24px 0 hsla(271, 100%, 94%, 1);
+	
+}
+.education-card-text-uni{
+	margin-left: -70px !important;
+	margin:auto;
+	font-family:Bitter;
+	align:center !important;
+	
+}
+.education-card-text-high{
+	
+	align:center !important;
+	position: center;
+	margin:auto;
+	
+}
+.education-card-text-middle{
+	margin-left: -75px !important;
+	align:center !important;
+	position: center;
+	margin:auto;
+	
+}
+.descriptive-text{
+	font-size:15px;
+	font-family:Bitter;
+	color:rgb(219, 219, 219);
+}
+.education-link{
+	color:white;
+	font-size: 18px;
+	underline:transparent;
+	font-family:Bitter;
+	
+}
+.education-link:hover{
+	color:white;
+	
+} 
+.education-link:focus{
+	color:white;
+	
+}

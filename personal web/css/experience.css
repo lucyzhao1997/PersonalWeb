@@ -1,0 +1,200 @@
+body {
+  
+  background:#322f30;
+  
+  font-weight: 400;
+}
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: Bitter;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: hsla(271, 37%, 47%, 1);
+  padding: 15px 23px;
+  color: #fff;
+  border-radius:8px;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+ 
+ 
+}
+.experience-img{
+	height: auto; 
+    width: auto; 
+    max-width: 404.79px; 
+    max-height: 352.97px;
+	 min-width: 404.79px; 
+    min-height: 352.97px;
+}
+.timeline-first{
+	 margin-top:20px !important;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: hsla(271, 100%, 94%, 1);
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.content-pic{
+	padding:0px!important;
+}
+.timeline-article p {
+  margin: 0px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+.article-title {
+ 
+  font-weight: 100;
+  font-size: 20px;
+  top: 10px;
+  left: -60px;
+  color: hsla(271, 37%, 47%, 0.79);
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline-article .meta-location {
+  position: absolute;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  top:0;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: hsla(271, 37%, 47%, 1);
+}
+.timeline-article .meta-location .date,
+.timeline-article .meta-location {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-location .date {
+  font-size: 20px;
+  line-height: 60px;
+  
+}
+.timeline-article .meta-location {
+  font-size: 18px;
+  line-height: 10px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-location {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 404px;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+	min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+	min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-title {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/

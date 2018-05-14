@@ -1,0 +1,193 @@
+@import "compass/css3";
+
+$timeline-color: #00637d;
+$timeline-future-color: #8DACB8;
+$timeline-line-width: 2px;
+$timeline-size: 32px;
+
+.timeline {
+  list-style: none;
+  margin: 25px 0 22px; padding: 0;
+  position: relative;
+  @include box-sizing(border-box);
+  
+  &:after {
+    border: 6px solid;
+    border-top-width: 13px;
+    border-color: $timeline-color transparent transparent transparent;
+    content: "";
+    display: block;
+    position: absolute; bottom: -19px; left: 15px;
+  }
+}
+
+.timeline-horizontal {
+  &:after {
+    border-top-width: 6px;
+    border-left-width: 13px;
+    border-color: transparent transparent transparent $timeline-color;
+    top: 15px; right: 0; bottom: auto; left: auto;
+  }
+  
+  .timeline-milestone {
+    border-top: $timeline-line-width solid $timeline-color;
+    display: inline;
+    float: left;
+    margin: 20px 0 0 0; padding: 40px 0 0 0;
+  
+    &:before {
+      top: -(($timeline-line-width / 2) + ($timeline-size / 2)); left: auto;
+    }
+
+    &.is-completed {
+      &:after {
+        top: -(($timeline-line-width / 2) + ($timeline-size / 2)); left: 0;
+      }
+    }
+  }
+}
+
+.timeline-milestone {
+  border-left: $timeline-line-width solid $timeline-color;
+  margin: 0 0 0 20px; padding: 0 0 5px 25px;
+  position: relative;
+  @include box-sizing(border-box);
+    
+  &:before {
+    border: ($timeline-line-width * 3.5) solid $timeline-color; border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute; left: -(($timeline-line-width / 2) + ($timeline-size / 2));
+    width: $timeline-size; height: $timeline-size;
+    @include box-sizing(border-box);
+  }
+    
+  &.is-completed {
+    &:before {
+      background-color: $timeline-color;
+    }
+      
+    &:after {
+      color: #FFF;
+      content: "\f00c";
+      display: block;
+      font-family: "FontAwesome";
+      line-height: $timeline-size;
+      position: absolute; top: 0; left: -(($timeline-line-width / 2) + ($timeline-size / 2));
+      text-align: center;
+      width: $timeline-size; height: $timeline-size;
+      @include box-sizing(border-box);
+    }
+  }
+    
+  &.is-current {
+    &:before {
+      background-color: #EEE;
+    }
+  }
+
+  &.is-future {
+    &:before {
+      background-color: $timeline-future-color;
+      border: 0;
+    }
+      
+    .timeline-action .title {
+      color: $timeline-future-color;
+    }
+  }
+}
+
+.timeline-action {
+  background-color: #FFF;
+  padding: 12px 10px 12px 20px;
+  position: relative; top: -15px;
+    
+  &.is-expandable {
+    .title {
+      cursor: pointer;
+      position: relative;
+        
+      &:focus {
+        outline: 0;
+        text-decoration: underline;
+      }
+        
+      &:after {
+        border: 6px solid #666;
+        border-color: transparent transparent transparent #666;
+        content: "";
+        display: block;
+        position: absolute; top: 6px; right: 0;
+      }
+    }
+      
+    .content { display: none; }
+      
+    &.is-expanded {
+      .title:after {
+        border-color: #666 transparent transparent transparent;
+        top: 10px; right: 5px;
+      }
+        
+      .content { display: block; } 
+    }
+  }
+    
+  .title, .content {
+    word-wrap: break-word; 
+  }
+    
+  .title {
+    color: $timeline-color;
+    font-size: 18px;
+    margin: 0;
+  }
+    
+  .date {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+    
+  .content {
+    font-size: 14px;
+  }
+}
+
+.file-list {
+  line-height: 1.4;
+  list-style: none;
+  padding-left: 10px;
+}
+
+
+body {
+ background-color: #EEE;
+ font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 40px 30px;
+}
+
+a {
+  color: #00637d;
+  text-decoration: none;
+  &:hover, &:focus { text-decoration: underline; }
+}
+
+.video-link:before {
+  content: "\f03d";
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+
+a[href*=".pdf"]:before {
+  content: "\f0f6";
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin-right: 8px;
+}

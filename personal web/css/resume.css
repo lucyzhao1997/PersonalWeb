@@ -1,0 +1,10 @@
+.resume-pdf{
+	width:900px;
+	height:1400px;
+	margin:auto;  
+	display:table-cell;
+	vertical-align:middle ;
+}
+.navbar{
+	top:0 !important;
+}
