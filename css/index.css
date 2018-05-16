@@ -65,6 +65,8 @@ body{
   color: #ffffff;
   letter-spacing: 8px;
   font-variant: small-caps;
+  font-size: 20px;  
+  font-family: 'Ribeye Marrow';
   
 }
 
@@ -92,7 +94,6 @@ ul.social-icons {
 .social-icons a {
     color: #fff;
     text-decoration: none;
-	margin-right: 8px;
 }
 .fa-facebook {
     padding:10px 14px;
@@ -478,9 +479,7 @@ section::after {
   line-height: 24px;
   position: relative;
 }
-.skill-set{
-	margin-top:80px;
-}
+
 @media screen and (max-width: 500px ) and (min-width: 400){
 	.buttons-to-links{
 		margin-left:70px !important;
