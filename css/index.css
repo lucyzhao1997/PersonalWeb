@@ -63,6 +63,8 @@ body{
 
 #hero h4 {
   color: #ffffff;
+  margin-top:10px;
+  margin-left: 5px;
   letter-spacing: 8px;
   font-variant: small-caps;
   font-size: 20px;  
