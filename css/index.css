@@ -348,6 +348,9 @@ section::after {
   animation: sdb03 3s infinite;
   box-sizing: border-box;
 }
+#profile-section{
+	padding-top:140px;
+}
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
