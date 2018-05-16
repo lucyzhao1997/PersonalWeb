@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-	font-family:Bitter;
 	
 }
 
@@ -14,6 +13,9 @@
 
 /* Center website */
 .main {
+	
+	
+	font-family:Bitter;
     max-width: 1000px;
     margin: auto;
 }
