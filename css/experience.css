@@ -31,12 +31,11 @@ body {
  
 }
 .experience-img{
-	height: auto; 
-    width: auto; 
-    max-width: 404.79px; 
-    max-height: 352.97px;
-	 min-width: 404.79px; 
-    min-height: 352.97px;
+	background-size:cover !important;
+	display:table;
+	top:0;
+	height:100%;
+	width:100%;
 }
 .timeline-first{
 	 margin-top:20px !important;
