@@ -98,19 +98,18 @@ ul.social-icons {
     color: #fff;
     text-decoration: none;
 }
-.fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+.fa-github {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
 }
-.fa-facebook:hover {
-    background-color: #3d5b99;
+.fa-github:hover {
+  background-color: #6e5494;
 }
-
 
 .fa-linkedin {
     padding:10px 14px;
